@@ -1,0 +1,49 @@
+package com.app.raven.dto;
+
+import java.time.LocalDate;
+
+import com.app.raven.model.PackageDetails;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class LoginRespDTO {	
+	private String firstName;	
+	private String lastName;	
+	private LocalDate packageStartDate;
+	private double packagePricing;		
+	private PackageDetails packageName;
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public LocalDate getPackageStartDate() {
+		return packageStartDate;
+	}
+	public void setPackageStartDate(LocalDate packageStartDate) {
+		this.packageStartDate = packageStartDate;
+	}
+	public double getPackagePricing() {
+		return packagePricing;
+	}
+	public void setPackagePricing(double packagePricing) {
+		this.packagePricing = packagePricing;
+	}
+	public PackageDetails getPackageName() {
+		return packageName;
+	}
+	public void setPackageName(PackageDetails packageName) {
+		this.packageName = packageName;
+	}
+	
+}
